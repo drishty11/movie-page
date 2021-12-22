@@ -1,0 +1,129 @@
+
+.parent__wrapper
+	.recommendation
+		width: 800px
+		max-width: 90%
+		margin: 0 auto 4rem auto
+
+	header
+		padding: 3em
+		display: flex
+		justify-content: space-between
+		h1
+			margin: 0
+			text-decoration: none
+			font-size: 1.5em
+		a
+			font-size: .9em
+	a
+	 color: transparentize(blue, 0.5)
+
+	.wrapper
+		display: flex
+	.wrapper_poster
+		width: 800px
+
+		img
+			border-radius: 5px
+		.arrow
+			margin-top: 10px
+		.previous
+			color: #cccccc
+		.next
+			color: #136cb2
+		.previous, .next
+			margin: 20px 0px 0 30px
+			font-size: 13px
+			line-height: 13px
+
+	.watchlist_movies
+		display: flex
+
+		.poster_watchlist
+			img
+				width: 128px
+				height: 190px
+				display: block
+				border-radius: 5px
+
+			.button_watchlist
+				padding: 2px
+				border-radius: 2px
+				border: 1px solid #cc9933
+				background-color: #f6db40
+				margin-top: 5px
+
+			.opinion
+				margin: 2px 0 0 0
+				display: block
+				padding: 2px
+
+
+				.button_opinion
+					background-color: #f1ead6
+					padding: 2px
+					display: inline-block
+					text-align: center
+					width: 59px
+					border: 1px solid #c0c0c0
+					border-radius: 3px
+					color: #000000
+
+
+		.content
+			margin-left: 20px
+			flex-basis: 50%
+			color: #cccccc
+			a
+				color: #e3e2dd
+				font-weight: bold
+
+				&:hover
+					color: blue
+					cursor: pointer
+					text-decoration: underline
+			span
+				display: block
+				color: #a49999
+				font-size: 11px
+			p
+				color: #333333
+
+				font-size: 14px
+			.space
+				margin-top: 20px
+				span
+					font-size: 11px
+
+					color: #333333
+
+			.rec
+				color: #333333
+
+
+/* media query */
+
+@media only screen and (max-width: 782px)
+	.parent__wrapper header
+		padding: 2em
+		h1
+			font-size: .9em
+			padding: 10px
+			letter-spacing: 2px
+
+		a
+			color: #ccc
+			padding: 10px
+			letter-spacing: 2px
+	.parent__wrapper .wrapper_poster
+		width: 302px
+	.parent__wrapper .watchlist_movies .content
+		display: none
+
+
+@media only screen and (max-width: 782px)
+	.parent__wrapper
+		width: 400px
+		margin: 0 auto
+		.watchlist_movies
+			display: none

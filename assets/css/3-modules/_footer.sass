@@ -1,0 +1,79 @@
+#newsletter
+  padding: 5em 0
+  background: #2a2a2e
+  text-align: center
+  margin-bottom: 1rem
+  .newsletter_inner
+    width: 600px
+    max-width: 90%
+    margin: 0 auto
+
+    h2
+      font-size: 1.75em
+      color: $white
+    .sign_up_form
+      margin-top: 3em
+      input[type="text"],
+      input[type="email"]
+        width: 48%
+        margin: 0 .5%
+        height: 3.25em
+        border: none
+        outline: none
+        border-radius: .3em
+        background: #404043
+        padding: .5em 1.25em
+        font-size: .8em
+        color: $white
+      .button
+        border: none
+        outline: none
+        padding: 1em 4.5em
+        background: $highlight
+        color: $white
+        font-weight: 700
+        font-size: .9em
+        margin-top: 3em
+        border-radius: 2em
+
+#main_footer
+  padding: 2.5em 0
+  text-align: center
+  .logo
+    font-size: 1.15em
+    text-transform: uppercase
+    font-weight: 700
+    span
+      color: $highlight
+      font-weight: 300
+  .copyright
+    color: $secondary
+    font-size: .75em
+    margin: 0
+  .links
+    display: inline
+
+    a
+      text-decoration: none
+      margin: 0 .5em
+      font-size: .75em
+      color: $secondary
+      &:hover
+        color: $highlight
+
+
+/* media query*/
+
+@media only screen and (max-width: 575px)
+  #newsletter
+    padding: 3em 0
+    .newsletter_inner
+      h2
+        font-size: 1.35em
+      .sign_up_form
+        margin-top: 2em
+        input[type="text"], input[type="email"]
+          width: 90%
+          margin: 0 0 1em 0
+        .button
+          margin-top: 1.5em  
